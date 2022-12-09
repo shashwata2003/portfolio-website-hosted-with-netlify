@@ -762,6 +762,23 @@ main {
 .shash1{
   padding-bottom: 19px;
 }
+.shash2{
+  padding-top:20px;
+}
+.shash2::after{
+  padding-top:20px ;
+}
+.downres{
+  border-radius: 25px;
+    background-color:white; /* Green */
+    border: none;
+    color: white;
+    padding: 9px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 .clients-item img:hover { filter: grayscale(0);
   transform: scale(1.1);}
 
