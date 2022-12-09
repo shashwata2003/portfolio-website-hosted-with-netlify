@@ -755,10 +755,15 @@ main {
   width: 100%;
   /* filter: grayscale(1); */
   transition: var(--transition-1);
+  width: max-content;
+    padding: 20px;
+    padding: inherit;
 }
-
+.shash1{
+  padding-bottom: 19px;
+}
 .clients-item img:hover { filter: grayscale(0);
-background-color: white; }
+  transform: scale(1.1);}
 
 
 
@@ -1476,6 +1481,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0 -30px;
     /* padding: 45px; */
     scroll-padding-inline: 45px;
+    padding-left: 24px;
   }
 
   .clients-item { min-width: calc(33.33% - 35px); }
