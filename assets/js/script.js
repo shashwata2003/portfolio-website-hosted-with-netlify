@@ -1,6 +1,6 @@
+//Made By shashwata samanta 21BRS1599 VIT Chennai.
+
 'use strict';
-
-
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -15,7 +15,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-
+/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
@@ -45,7 +45,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
     testimonialsModalFunc();
 
-  });
+  });/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
 
 }
 
@@ -70,7 +70,7 @@ for (let i = 0; i < selectItems.length; i++) {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
-    filterFunc(selectedValue);
+    filterFunc(selectedValue);/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
 
   });
 }
@@ -97,7 +97,7 @@ const filterFunc = function (selectedValue) {
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
+for (let i = 0; i < filterBtn.length; i++) {/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
 
   filterBtn[i].addEventListener("click", function () {
 
@@ -121,7 +121,7 @@ const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
+for (let i = 0; i < formInputs.length; i++) {/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
   formInputs[i].addEventListener("input", function () {
 
     // check form validation
@@ -135,9 +135,9 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 // Typed animation
 var typed = new Typed(".typing",{
-  strings:["Student","VITian","Web developer","Blogger"],
+  strings:["Student","VITian","Web dev"],
   typespeed:300000,
-  backspeed:1000,
+  backspeed:1000,/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
   loop:true
 })
 
@@ -163,3 +163,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
