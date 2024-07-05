@@ -326,6 +326,39 @@ main {
   margin-bottom: 10px;
 }
 
+.info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-content .name {
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
+}
+
+.title.text-3 {
+  color: var(--white-2);
+  font-size: var(--fs-2);
+  display: inline-flex; /* Ensure inline display */
+  transition: opacity 0.3s ease-in-out;
+  background: none; /* Ensure no background color */
+  border: none; /* Ensure no border */
+  margin-top: -5px; /* Move it up a little */
+  padding: 0; /* Ensure no padding */
+}
+
+.typing {
+  display: inline;
+  font-weight: bold;
+  color: var(--primary-color); /* Adjust this to match your primary color */
+  background: none; /* Ensure no background color */
+  border: none; /* Ensure no border */
+  margin: 0; /* Ensure no margin */
+  margin-left: 5px;
+  padding: 0; /* Ensure no padding */
+}
+
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
@@ -334,7 +367,10 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  margin: 0; /* Ensure no margin */
 }
+
+
 .info-content .title .text3 .span{
   color: red;
 }
@@ -779,7 +815,8 @@ main {
  * education and experience 
  */
 
-.timeline { margin-bottom: 30px; }
+.timeline { margin-bottom: 30px; 
+}
 
 .timeline .title-wrapper {
   display: flex;
@@ -800,7 +837,14 @@ main {
 .timeline-item-title {
   font-size: var(--fs-6);
   line-height: 1.3;
+  color: #ffffff; /* White text color for the link */
+  
   margin-bottom: 7px;
+}
+
+.timeline-item-title a {
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Remove underline */
 }
 
 .timeline-list span {
@@ -841,34 +885,42 @@ main {
 /**
  * skills 
  */
-
-.skills-title { margin-bottom: 20px; }
-
-.skills-list { padding: 20px; }
-
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
+ :root {
+  --text-color: #fff; /* Adjust this to match your page's text color */
+  --font-size: 16px;  /* Adjust this to match your page's font size */
+}
+.skills-title {
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+.skills-list {
+  padding: 20px;
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+.skills-item:not(:last-child) {
+  margin-bottom: 15px;
+}
 .skill .title-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
   margin-bottom: 8px;
+  color: var(--text-color);
+  font-size: var(--font-size);
 }
-
 .skill .title-wrapper data {
   color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
 }
-
 .skill-progress-bg {
   background: var(--jet);
   width: 100%;
   height: 8px;
   border-radius: 10px;
 }
-
 .skill-progress-fill {
   background: var(--text-gradient-yellow);
   height: 100%;
@@ -995,6 +1047,10 @@ main {
 }
 /* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
 .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
+.project-item-icon-box img {
+  width: 50px;  /* Adjusts the width of the image */
+  height: 50px; /* Adjusts the height of the image */
+}
 
 .project-img img {
   width: 100%;
@@ -1369,13 +1425,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #NAVBAR
    */
+.navbar {
+  border-radius: 20px 20px 0 0;
+}
 
-  .navbar { border-radius: 20px 20px 0 0; }
+.navbar-list {
+  display: flex;
+  gap: 20px;
+}
 
-  .navbar-list { gap: 20px; }
-
-  .navbar-link { --fs-8: 14px; }
-
+.navbar-link {
+  font-size: var(--fs-8, 14px); /* 14px is a fallback if --fs-8 is not defined */
+}
 
 
   /**

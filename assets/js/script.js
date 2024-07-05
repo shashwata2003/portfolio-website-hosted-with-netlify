@@ -79,20 +79,15 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
   for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    if (selectedValue === "all" || selectedValue === filterItems[i].dataset.category.toLowerCase()) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
+};
 
-}
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -134,12 +129,14 @@ for (let i = 0; i < formInputs.length; i++) {/* //Made By shashwata samanta 21BR
   });
 }
 // Typed animation
-var typed = new Typed(".typing",{
-  strings:["Student","VITian","Web dev"],
-  typespeed:300000,
-  backspeed:1000,/* //Made By shashwata samanta 21BRS1599 VIT Chennai. */
-  loop:true
-})
+var typed = new Typed(".typing", {
+  strings: [" Student", " VITian", " Web dev", " Content writer", " Editor"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 2000,
+  startDelay: 500,
+  loop: true
+});
 
 
 // page navigation variables
